@@ -1,0 +1,480 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --title-container-font: 'Montserrat', sans-serif;
+    --pattern-font: 'Open Sans', sans-serif;
+    --price-plan-font: 'Roboto Slab', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--pattern-font);
+}
+
+.shadow {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: block;
+}
+
+/* HEADER LATERAL*/
+header.lateral {
+    display: none;
+}
+
+header.active {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.67);
+    display: block;
+}
+
+ion-icon.close {
+    color: #fff;
+    font-size: 2.5em;
+    padding: 2px;
+    margin-top: 10px;
+    margin-left: 196px;
+    cursor: pointer;
+}
+
+ion-icon.close:hover {
+    color: #ec5611;
+}
+
+header.lateral ul {
+    list-style-type: none;
+    margin-top: 25px;
+    text-align: center;
+}
+
+header.lateral li {
+    padding: 5px;
+}
+
+header.lateral li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+header.lateral li a:hover {
+    color: #9c9c9c;
+}
+
+button.close {
+    padding: 10px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+}
+
+button.close:hover {
+    background: orange;
+}
+/* HEADER */
+
+header.header-default {
+    background: #fff;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+img.logo {
+    padding: 10px;
+    height: 50px;
+    margin-left: 25px;
+}
+
+header.header-default ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+}
+
+header.header-default ul li a{
+    font-size: 1em;
+    text-decoration: none;
+    color: #111111;
+    padding: 2px;
+}
+
+ion-icon.menu-icon {
+    font-size: 3.1rem;
+    color: #111111;
+    margin-right: 5px;
+    vertical-align: 0;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+ion-icon.menu-icon:hover {
+    color: #ec5611;
+}
+
+#container {
+    background: #808080;
+    padding: 50px 10px 40px;
+}
+
+h1 {
+    color: #fff;
+    font-family: var(--title-container-font);
+    font-size: 60px;
+    text-align: center;
+}
+
+p.p-title {
+    width: 640px;
+    margin: auto;
+    margin-top: 10px;
+    color: #fff;
+    font-family: var(--pattern-font);
+    font-size: 18px;
+    text-align: center;
+}
+
+span.p-span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* BOXS */
+
+div.boxs {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    width: 1025px;
+    margin-top: 100px;
+}
+
+div.box {
+    height: 500px;
+    width: 320px;
+    background: #fff;
+    padding: 0px 0px;
+    text-align: center;
+    box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.39);
+}
+
+div.plan-info {
+    background: orange;
+    width: 260px;
+    height: 210px;
+    color: #fff;
+    margin: auto;
+    margin-top: -55px;
+    margin-bottom: 10px;
+    padding: 20px 0;
+    box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.322);
+    letter-spacing: 1.5px;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-family: var(--pattern-font);
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+p.price {
+    font-family: var(--price-plan-font);
+    font-size: 4.4em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 3px;
+}
+
+p.p-month {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.plan-info1 {
+    background-image: linear-gradient(to bottom, rgb(76, 43, 119), rgb(145, 54, 206));
+}
+
+div.plan-info2 {
+    background-image: linear-gradient(to bottom, rgb(96, 141, 23), rgb(150, 206, 60));
+}
+
+div.plan-info3 {
+    background-image: linear-gradient(to bottom, rgb(187, 86, 19), rgb(255, 115, 0));
+}
+
+.box ul {
+    padding-left: 40px;
+}
+
+.box ul li {
+    list-style-type: none;
+    text-align: justify;
+    font-family: var(--pattern-font);
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #808080;
+    padding-top: 20px;
+}
+
+ion-icon.plans {
+    font-size: 1.3rem;
+    margin-right: 8px;
+    vertical-align: -6px;
+}
+
+.green-emoji {
+    color: #2CCCC4;
+}
+
+.red-emoji {
+    color: #F44336;
+}
+
+button.choose-plan {
+    cursor: pointer;
+    background: #e7722e;
+    color: #fff;
+    font-family: var(--pattern-font);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    border: none;
+    margin-top: 40px;
+    padding: 12px 50px;
+}
+
+button.choose-plan:hover {
+    background: #ec5611;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.404);
+}
+
+footer {
+    background: #333333;
+    text-align: center;
+}
+
+footer p:first-child {
+    color: white;
+    font-size: 0.9rem;
+    width: 420px;
+    margin: 0 auto;
+    margin-bottom: 49px;
+    padding-top: 49px;
+}
+
+footer p:last-child {
+    color: white;
+    font-size: 0.8rem;
+    padding: 16px;
+}
+
+footer a {
+    text-decoration: underline;
+    color: #C2B4F2;
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+    div.boxs {
+        width: 880px;
+    }
+
+    div.box {
+        width: 280px;
+        height: 460px;
+        box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.185);
+    }
+
+    div.plan-info {
+        width: 230px;
+        height: 190px;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 691px) and (max-width: 900px) {
+    header.header-default {
+        justify-content: space-between;
+    }
+
+    img.logo {
+        margin-left: 40px;
+    }
+
+    header.header-default ul {
+        display: none;
+    }
+
+    ion-icon.menu-icon {
+        display: block;
+    }
+
+    div.boxs {
+        width: 670px;
+    }
+
+    div.box {
+        width: 210px;
+        height: 450px;
+    }
+
+    div.plan-info {
+        width: 170px;
+    }
+
+    h3 {
+        padding-top: 10px;
+        width: 140px;
+        margin: auto;
+    }
+
+    .plan-info1 h3, .plan-info3 h3 {
+        margin-top: -10px;
+    }
+
+    .plan-info1 p.price, .plan-info3 p.price {
+        margin-top: -10px;
+    }
+
+    p.price {
+        font-size: 4em;
+    }
+
+    p.p-month {
+        font-size: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .box ul {
+        padding-left: 20px;
+    }
+
+    button.choose-plan {
+        margin-top: 25px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 690px) {
+    header.header-default {
+        justify-content: space-between;
+    }
+
+    ion-icon.menu-icon {
+        display: block;
+    }
+
+    header.header-default ul {
+        display: none;
+    }
+
+    #container {
+        height: auto;
+        padding: 50px 40px 20px;
+    }
+
+    div.boxs {
+        flex-direction: column;
+        width: auto;
+        margin-top: 20px;
+    }
+
+    p.p-title {
+        width: 90%;
+    }
+
+    div.box {
+        width: 100%;
+        height: auto;
+        padding: 30px 25px 30px;
+        margin: 20px 0;
+    }
+
+    div.plan-info {
+        width: 100%;
+        height: 210px;
+        color: #fff;
+        margin-top: 0;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.322);
+        letter-spacing: 1.5px;
+    }
+
+    .box ul {
+        padding-left: 50px;
+    }
+
+    .box ul li {
+        font-size: 1rem;
+        padding-left: 0px;
+    }
+
+    ion-icon.plans {
+        font-size: 1.3rem;
+        margin-right: 5px;
+        vertical-align: -6px;
+        padding-right: 3px;
+        padding-top: 20px;
+    }
+
+    button.choose-plan {
+        margin-top: 50px;
+        padding: 15px 50px;
+    }
+
+    footer p:first-child {
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 100%;
+    }
+
+    footer p:last-child {
+        width: 100%;
+    }
+}
+
+@media (max-width: 440px) {
+    div.box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box ul {
+        padding: 0;
+    }
+
+    h3 {
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+}
+
+@media (max-width: 320px){
+    .box ul li {
+        font-size: 0.8rem;
+    }
+}

@@ -70,9 +70,9 @@ footer p {
     list-style-type: none;
     background-color: #b0f7ff;
     display: inline-block;
-    width: 180px;
-    height: 80px;
-    margin: 10px;
+    width: 280px;
+    height: 200px;
+    margin: 8px;
     border-radius: 10px;
     position: relative;
 }

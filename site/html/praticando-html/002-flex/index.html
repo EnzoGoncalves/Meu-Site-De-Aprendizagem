@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="all"></div>
+        <header class="lateral">
+            <ion-icon name="close-outline" class="close" onclick="closeLateralBar()"></ion-icon>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <header class="header-default">
+            <img src="default-logo.png" alt="Logo" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ion-icon name="menu" class="menu-icon" onclick="openLateralBar()"></ion-icon>
+        </header>
+        <div id="container">
+            <h1>Plans & Pricing</h1>
+            <p class="p-title">Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing <span class="p-span">elit nullam</span> nunc justo sagittis suscipit ultrices.</p>
+
+        <div class="boxs">
+            <div class="box">
+                <div class="plan-info plan-info1">
+                    <h3>HATCHLING PLAN</h3>
+                    <p class="price">$29</p>
+                    <p class="p-month">PER MONTH</p>
+                </div>
+                <ul>
+                    <li><ion-icon name="checkmark-outline" class="green-emoji plans"></ion-icon>Unlimited Support</li>
+                    <li><ion-icon name="checkmark-outline" class="green-emoji plans"></ion-icon>5GB Server Space</li>
+                    <li><ion-icon name="checkmark-outline" class="green-emoji plans"></ion-icon>2 Users per Project</li>
+                    <li><ion-icon name="close-outline" class="red-emoji plans"></ion-icon>Email Integration</li>
+                    <li><ion-icon name="close-outline" class="red-emoji plans"></ion-icon>Unlimited Download</li>
+                </ul>
+                <button class="choose-plan">CHOOSE PLAN</button>
+            </div>
+            <div class="box">
+                <div class="plan-info plan-info2">
+                    <h3>BABY PLAN</h3>
+                    <p class="price">$69</p>
+                    <p class="p-month">PER MONTH</p>
+                </div>
+                <ul>
+                    <li><ion-icon name="checkmark-outline" class="green-emoji plans"></ion-icon>Unlimited Support</li>
+                    <li><ion-icon name="checkmark-outline" class="green-emoji plans"></ion-icon>10GB Server Space</li>
+                    <li><ion-icon name="checkmark-outline" class="green-emoji plans"></ion-icon>5 Users per Project</li>
+                    <li><ion-icon name="checkmark-outline" class="green-emoji plans"></ion-icon>Email Integration</li>
+                    <li><ion-icon name="close-outline" class="red-emoji plans"></ion-icon>Unlimited Download</li>
+                </ul>
+                <button class="choose-plan">CHOOSE PLAN</button>
+            </div>
+            <div class="box">
+                <div class="plan-info plan-info3">
+                    <h3>PREMIUM PLAN</h3>
+                    <p class="price">$99</p>
+                    <p class="p-month">PER MONTH</p>
+                </div>
+                <ul>
+                    <li><ion-icon name="checkmark-outline" class="green-emoji plans"></ion-icon>Unlimited Support</li>
+                    <li><ion-icon name="checkmark-outline" class="green-emoji plans"></ion-icon>25GB Server Space</li>
+                    <li><ion-icon name="checkmark-outline" class="green-emoji plans"></ion-icon>10 Users per Project</li>
+                    <li><ion-icon name="checkmark-outline" class="green-emoji plans"></ion-icon>Email Integration</li>
+                    <li><ion-icon name="checkmark-outline" class="green-emoji plans"></ion-icon>Unlimited Download</li>
+                </ul>
+                <button class="choose-plan">CHOOSE PLAN</button>
+            </div>
+        </div>
+        </div>
+        <footer>
+            <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+            <p><a href="#">Website Templates</a> created with <a href="#">Website Builder Software</a>.</p>
+        </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+    const lateral = document.querySelector('.lateral');
+    const shadowAll = document.querySelector('.all');
+
+    function openLateralBar() {
+        lateral.classList.toggle('active');
+        shadowAll.classList.toggle('shadow');
+    }
+
+    function closeLateralBar() {
+        lateral.classList.remove('active');
+        shadowAll.classList.remove('shadow');
+    }
+</script>
+</body>
+</html>
